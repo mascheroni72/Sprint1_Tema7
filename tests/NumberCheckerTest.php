@@ -9,8 +9,14 @@ class NumberCheckerTest extends TestCase{
     public function testIsEven(){
     $this->assertTrue($this->number->isEven());
     }
+    public function testIsNotEven(){
+        $this->assertTrue($this->number->isNotEven());
+    }
     public function testIsPositive(){ 
-    $this->assertTrue($this ->number->isPositive());
+    $this->assertFalse($this ->number->isPositive());
+    }
+    public function testIsNumberZero(){ 
+        $this->assertTrue($this ->number->isNumberZero());
     }
 }
 ?>
